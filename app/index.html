@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="contactApp">
 <head>
   <meta charset="utf-8">
   <title>Google Phone Gallery</title>
@@ -21,8 +21,9 @@
 </head>
 <body>
 
-  <div class="view-container">
-    <div ng-view class="view-frame"></div>
+  <div class="container">
+    <div ng-include="'partials/navigation.html'"></div>
+    <div ng-view></div>
   </div>
 
 </body>

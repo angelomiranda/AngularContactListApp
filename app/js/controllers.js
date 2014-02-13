@@ -2,21 +2,19 @@
 
 /* Controllers */
 
-var phonecatControllers = angular.module('phonecatControllers', []);
-
-phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
-    $scope.phones = Phone.query();
-    $scope.orderProp = 'age';
-  }]);
-
-phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
-    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-      $scope.mainImageUrl = phone.images[0];
+var Controllers = {};
+Controllers.ContactListCtrl = function($scope, $http) {
+  $http({ method: 'GET', url: 'contacts/contacts.json' })
+    .success(function(contacts){
+      $scope.contacts = contacts;
     });
+}
 
-    $scope.setImage = function(imageUrl) {
-      $scope.mainImageUrl = imageUrl;
-    }
-  }]);
+Controllers.ContactDetailCtrl = function($scope, $routeParams) {
+    $http({ method: 'GET', url: 'contacts/' + $routeParams.contacts + '.json'})
+      .success(function(contacts) {
+        $scope.contacts = contacts;
+      });
+};
+
+contactApp.controller(Controllers);
