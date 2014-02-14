@@ -10,10 +10,10 @@ Controllers.ContactListCtrl = function($scope, $http) {
     });
 }
 
-Controllers.ContactDetailCtrl = function($scope, $routeParams) {
+Controllers.ContactDetailCtrl = function($scope, $routeParams, $http) {
     $http({ method: 'GET', url: 'contacts/' + $routeParams.contacts + '.json'})
-      .success(function(contacts) {
-        $scope.contacts = contacts;
+      .success(function(contact) {
+        $scope.contact = contact;
       });
 };
 

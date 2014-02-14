@@ -1,31 +1,16 @@
 
-  <table class="table table-hover table-bordered">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Age</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Angelo Miranda</td>
-            <td>6584 Austin St.</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Joe</td>
-            <td>Sixpack</td>
-            <td>English</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Joe</td>
-            <td>Sixpack</td>
-            <td>English</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="container" >
+  <div class="imgContainer clearfix">
+    <div class="imgMain">
+      <img class="mainImg" ng-src="{{contact.imageMain}}"/>
+    </div>
+    <div class="imgThumbContainer" ng-repeat="thumbs in contact.imageThumbnails">
+      <img class="imgThumbnails" ng-src="{{thumbs}}"/>
+    </div>
+  </div>
+  <p>Name: {{contact.name}}</p>
+  <p>Nickname: {{contact.nick}}</p>
+  <p>Gender: {{contact.gender}}</p>
+  <p>Hobbies are: <span ng-repeat="hobby in contact.hobbies">{{ hobby }} </span></p>
+<!--   <p>{{contact}}</p> -->
+</div>
