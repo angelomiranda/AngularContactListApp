@@ -2,31 +2,21 @@
 
 /* App Module */
 
-var contactApp = angular.module('contactApp', [ 'ngRoute', 'ngResource' ]);
+var carApp = angular.module('carApp', [ 'ngRoute', 'ngResource' ]);
 
-contactApp.config(function($routeProvider){
+carApp.config(function($routeProvider){
   $routeProvider
     .when('/', {
       templateUrl: 'partials/home.html'
     })
-    .when('/contacts', {
-      templateUrl: 'partials/contact-list.html',
-      controller: 'ContactListCtrl'
+    .when('/cars', {
+      templateUrl: 'partials/car-list.html',
+      controller: 'CarListCtrl'
     })
-    .when('/contacts/:contacts', {
-      templateUrl: 'partials/contact-detail.html',
-      controller: 'ContactDetailCtrl'
+    .when('/cars/:cars', {
+      templateUrl: 'partials/car-detail.html',
+      controller: 'CarDetailCtrl'
     });
 
 });
 
-contactApp.directive('imageonload', function() {
-    return {
-        restrict: 'A',
-        link: function(scope, element, attrs) {
-            element.bind('load', function() {
-                alert('image is loaded');
-            });
-        }
-    };
-});

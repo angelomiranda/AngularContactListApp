@@ -1,0 +1,18 @@
+  <div class="imgContainer clearfix">
+    <div class="imgMain">
+      <img class="mainImg" ng-src="{{main}}"/>
+      <div>
+        <h3>Car Details</h3>
+        <p>Name: {{cars.name}}</p>
+        <p>Make: {{cars.make}}</p>
+        <p>Year: {{cars.year}}</p>
+        <p>MSRP: {{cars.MSRP}}</p>
+        <p>Fuel Consumption: {{cars.fuelConsumption}}</p>
+      </div>
+    </div>
+    <div class="imgThumbContainer">
+      <div ng-repeat="thumbs in cars.imageThumbnails">
+        <img class="imgThumbnails" ng-src="{{thumbs}}" ng-click="setImage(thumbs)"/>
+      </div>
+    </div>
+  </div>

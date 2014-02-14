@@ -1,0 +1,9 @@
+{
+    "name": "Toyota Supra Coupe",
+    "make": "Toyota",
+    "year": "1998",
+    "MSRP": "$50,300",
+    "fuelConsumption": "17/22 mpg",
+    "imageMain": "img/toyota/1.jpg",
+    "imageThumbnails": ["img/toyota/1.jpg", "img/toyota/2.jpg", "img/toyota/3.jpg", "img/toyota/4.jpg", "img/toyota/5.jpg", "img/toyota/6.jpg"]
+}

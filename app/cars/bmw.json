@@ -1,0 +1,9 @@
+{
+    "name": "BMW 5 Series",
+    "make": "BMW",
+    "year": "2012",
+    "MSRP": "$61,400",
+    "fuelConsumption": "23 cty/30 hwy",
+    "imageMain": "img/bmw/1.jpg",
+    "imageThumbnails": ["img/bmw/1.jpg", "img/bmw/2.jpg", "img/bmw/3.jpg", "img/bmw/4.jpg", "img/bmw/5.jpg", "img/bmw/6.jpg", "img/bmw/7.jpg", "img/bmw/8.jpg", "img/bmw/9.jpg", "img/bmw/10.jpg", "img/bmw/11.jpg", "img/bmw/12.jpg", "img/bmw/13.jpg", "img/bmw/14.jpg"]
+}

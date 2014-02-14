@@ -1,0 +1,9 @@
+{
+    "name": "Mercedes-Benz C-Class",
+    "make": "Mercedes-Benz",
+    "year": "2013",
+    "MSRP": "$59,800",
+    "fuelConsumption": "13 cty/19 hwy",
+    "imageMain": "img/mercedes/1.jpg",
+    "imageThumbnails": ["img/mercedes/1.jpg", "img/mercedes/2.jpg", "img/mercedes/3.jpg", "img/mercedes/4.jpg", "img/mercedes/5.jpg", "img/mercedes/6.jpg", "img/mercedes/7.jpg", "img/mercedes/8.jpg", "img/mercedes/9.jpg", "img/mercedes/10.jpg", "img/mercedes/11.jpg", "img/mercedes/12.jpg", "img/mercedes/13.jpg", "img/mercedes/14.jpg"]
+}

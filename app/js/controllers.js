@@ -3,20 +3,20 @@
 /* Controllers */
 
 var Controllers = {};
-Controllers.ContactListCtrl = function($scope, $http) {
-  $http({ method: 'GET', url: 'contacts/contacts.json' })
-    .success(function(contacts){
-      $scope.contacts = contacts;
+Controllers.CarListCtrl = function($scope, $http) {
+  $http({ method: 'GET', url: 'cars/cars.json' })
+    .success(function(cars){
+      $scope.cars = cars;
     });
 }
 
-Controllers.ContactDetailCtrl = function($scope, $routeParams, $http) {
-    $http({ method: 'GET', url: 'contacts/' + $routeParams.contacts + '.json'})
-      .success(function(contact) {
+Controllers.CarDetailCtrl = function($scope, $routeParams, $http) {
+    $http({ method: 'GET', url: 'cars/' + $routeParams.cars + '.json'})
+      .success(function(cars) {
 
-        $scope.contact = contact;
+        $scope.cars = cars;
 
-        $scope.main = contact.imageMain;
+        $scope.main = cars.imageMain;
 
         $scope.setImage = function(imgurl){
           $scope.main = imgurl;
@@ -26,4 +26,4 @@ Controllers.ContactDetailCtrl = function($scope, $routeParams, $http) {
 
 };
 
-contactApp.controller(Controllers);
+carApp.controller(Controllers);
