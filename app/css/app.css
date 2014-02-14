@@ -36,3 +36,57 @@ body {
   height: 130px;
   margin: 0 0 10px 10px;
 }
+
+/*
+  Staggering Animation
+*/
+.repeater.ng-enter {
+  /* standard transition code */
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity:0;
+
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+
+
+}
+.repeater.ng-enter-stagger {
+  /* this will have a 100ms delay between each successive leave animation */
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+
+  /* in case the stagger doesn't work then these two values
+   must be set to 0 to avoid an accidental CSS inheritance */
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+
+
+}
+.repeater.ng-enter.ng-enter-active {
+  /* standard transition styles */
+
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity:1;
+}
+/*
+  End Staggering Animation
+*/
+
+
+
+/*  FADE IN ANIMATION  */
+
+.fadeIn.ng-enter {
+  -webkit-animation: enter_sequence 1s linear;
+  animation: enter_sequence 1s linear;
+}
+@-webkit-keyframes enter_sequence {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+@keyframes enter_sequence {
+  from { opacity:0; }
+  to { opacity:1; }
+}

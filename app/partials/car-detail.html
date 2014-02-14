@@ -1,6 +1,6 @@
   <div class="imgContainer clearfix">
     <div class="imgMain">
-      <img class="mainImg" ng-src="{{main}}"/>
+      <img class="mainImg" ng-src="{{main}}" class="repeater"/>
       <div>
         <h3>Car Details</h3>
         <p>Name: {{cars.name}}</p>
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="imgThumbContainer">
-      <div ng-repeat="thumbs in cars.imageThumbnails">
+      <div ng-repeat="thumbs in cars.imageThumbnails" class="repeater">
         <img class="imgThumbnails" ng-src="{{thumbs}}" ng-click="setImage(thumbs)"/>
       </div>
     </div>
