@@ -13,8 +13,17 @@ Controllers.ContactListCtrl = function($scope, $http) {
 Controllers.ContactDetailCtrl = function($scope, $routeParams, $http) {
     $http({ method: 'GET', url: 'contacts/' + $routeParams.contacts + '.json'})
       .success(function(contact) {
+
         $scope.contact = contact;
+
+        $scope.main = contact.imageMain;
+
+        $scope.setImage = function(imgurl){
+          $scope.main = imgurl;
+        }
+
       });
+
 };
 
 contactApp.controller(Controllers);
