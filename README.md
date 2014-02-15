@@ -11,5 +11,5 @@ To preview, you need to install node then go to the root directory then run
 node scripts/web-server.js
 
 
-Live Demo at angularcarapp.herokuapp.com.
+See Live Demo at [Heroku] (http://angularcarapp.herokuapp.com).
 
