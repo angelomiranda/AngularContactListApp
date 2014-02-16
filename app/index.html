@@ -2,11 +2,17 @@
 <html lang="en" ng-app="carApp">
 <head>
   <meta charset="utf-8">
-  <title>Contact List Application</title>
+  <title>Angular Car Application</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
 
+  <div class="container">
+    <div ng-include="'partials/navigation.html'"></div>
+    <div ng-view></div>
+  </div>
   <script src="lib/jquery/jquery-1.10.2.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-animate.js"></script>
@@ -16,13 +22,5 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
-</head>
-<body>
-
-  <div class="container">
-    <div ng-include="'partials/navigation.html'"></div>
-    <div ng-view></div>
-  </div>
-
 </body>
 </html>
