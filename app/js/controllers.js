@@ -16,10 +16,10 @@ Controllers.CarDetailCtrl = function($scope, $routeParams, $http) {
 
         $scope.cars = cars;
 
-        $scope.main = cars.imageMain;
+        $scope.mainImage = cars.imageThumbnails[0];
 
         $scope.setImage = function(imgurl){
-          $scope.main = imgurl;
+          $scope.mainImage = imgurl;
         }
 
       });

@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var carApp = angular.module('carApp', [ 'ngRoute', 'ngResource', 'ngAnimate' ]);
+var carApp = angular.module('carApp', [ 'ngRoute', 'ngResource', 'carAnimations']);
 
 carApp.config(function($routeProvider){
   $routeProvider
