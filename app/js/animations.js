@@ -8,13 +8,13 @@ carAnimations.animation('.mainImg', function() {
     }
     element.css({
       position: 'absolute',
-      top: 500,
+      top: 0,
       left: 0,
-      display: 'block'
+      display: 'block !important'
     });
 
     jQuery(element).animate({
-      top: 0
+      top: -500
     }, done);
 
     return function(cancel) {
