@@ -1,7 +1,7 @@
   <div class="imgContainer clearfix">
     <div class="imgMain">
       <img class="mainImg"
-          src="{{mainImage}}"
+          ng-src="{{thumbs}}"
           ng-repeat="thumbs in cars.imageThumbnails"
           ng-class="{active: mainImage==thumbs}"/>
     </div>

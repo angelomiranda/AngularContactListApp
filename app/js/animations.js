@@ -1,20 +1,22 @@
-var carAnimations = angular.module('carAnimations', ['ngAnimate']);
+var carAnimations = angular.module('carAnimations', []);
 
 carAnimations.animation('.mainImg', function() {
 
   var animateUp = function(element, className, done) {
-    if(className != 'active') {
-      return;
-    }
+
+    jQuery('.mainImg').css({
+      top: -500,
+      position: 'absolute'
+    });
+
     element.css({
       position: 'absolute',
-      top: 0,
-      left: 0,
-      display: 'block !important'
+      top: -500,
+      left: 0
     });
 
     jQuery(element).animate({
-      top: -500
+      top: 0
     }, done);
 
     return function(cancel) {
@@ -25,9 +27,7 @@ carAnimations.animation('.mainImg', function() {
   }
 
   var animateDown = function(element, className, done) {
-    if(className != 'active') {
-      return;
-    }
+
     element.css({
       position: 'absolute',
       left: 0,
