@@ -23,6 +23,56 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
-    <script src="js/animations.js"></script>
+  <script src="js/animations.js"></script>
+
+
+  <!-- Small pre-loader for images -->
+  <div class="hidden">
+    <script>
+        var images = new Array()
+        function preload() {
+          for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+          }
+        }
+        preload(
+          "./img/bmw/1.jpg",
+          "./img/bmw/2.jpg",
+          "./img/bmw/3.jpg",
+          "./img/bmw/4.jpg",
+          "./img/bmw/5.jpg",
+          "./img/bmw/6.jpg",
+          "./img/bmw/7.jpg",
+          "./img/bmw/8.jpg",
+          "./img/bmw/9.jpg",
+          "./img/bmw/10.jpg",
+          "./img/bmw/11.jpg",
+          "./img/bmw/12.jpg",
+          "./img/bmw/13.jpg",
+          "./img/bmw/14.jpg",
+          "./img/mercedes/1.jpg",
+          "./img/mercedes/2.jpg",
+          "./img/mercedes/3.jpg",
+          "./img/mercedes/4.jpg",
+          "./img/mercedes/5.jpg",
+          "./img/mercedes/6.jpg",
+          "./img/mercedes/7.jpg",
+          "./img/mercedes/8.jpg",
+          "./img/mercedes/9.jpg",
+          "./img/mercedes/10.jpg",
+          "./img/mercedes/11.jpg",
+          "./img/mercedes/12.jpg",
+          "./img/mercedes/13.jpg",
+          "./img/mercedes/14.jpg",
+          "./img/toyota/1.jpg",
+          "./img/toyota/2.jpg",
+          "./img/toyota/3.jpg",
+          "./img/toyota/4.jpg",
+          "./img/toyota/5.jpg",
+          "./img/toyota/6.jpg"
+        )
+    </script>
+  </div>
 </body>
 </html>
